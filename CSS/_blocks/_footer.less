@@ -1,0 +1,140 @@
+//main: ..//style.less
+
+.footer {
+    padding: 30px 0;
+    background: url(.././images/dest/allbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .footer_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer_start {
+            width: 355px;
+
+            .form_desc {
+                font-weight: 700;
+                text-align: center;
+                margin: 30px 0;
+                color: #fff;
+
+                h4 {
+                    font-size: 17px;
+                    margin: 20px 0;
+
+                }
+
+                p {
+                    color: #F8B571;
+                    font-size: 22px;
+                }
+            }
+
+            .form {
+
+                input,
+                select {
+                    border: 1px solid #46C1C9;
+
+                }
+
+
+            }
+        }
+
+        .footer_end {
+            width: 700px;
+            position: relative;
+
+
+            img {
+                width: 100%;
+            }
+
+
+        }
+    }
+}
+
+.logo_riza {
+    margin: 30px auto;
+    width: 200px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and(max-width:1024px) {
+    .footer {
+        .footer_wrapper {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and(max-width:966px) {
+
+    .footer {
+        .footer_wrapper {
+            flex-direction: column-reverse;
+            width: 400px;
+            margin: 0 auto;
+            padding: 0;
+
+            .footer_end {
+                width: auto;
+
+
+            }
+
+            .footer_start {
+                margin: 0 auto;
+            }
+
+        }
+
+
+    }
+}
+
+@media screen and(max-width:425px) {
+
+    .footer {
+        .footer_wrapper {
+            padding: 0;
+            width: 300px;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .footer_start {
+                width: auto;
+
+                .form_desc {
+                    width: auto;
+                }
+
+                .form {
+                    width: auto;
+
+                    input,
+                    select {
+                        width: 300px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .logo_riza {
+        width: 160px;
+    }
+}

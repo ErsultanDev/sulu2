@@ -1,0 +1,83 @@
+//main: ..//style.less
+
+.b4 {
+    padding: 25px 0;
+    background: url(.././images/dest/b4bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 450px;
+
+
+    .b4_wrapper {
+        color: #2C605A;
+        width: 900px;
+        margin: 0 auto;
+        background: url(.././images/dest/b4wrapperbg.png);
+        background-position: center;
+        padding: 158px 0;
+        background-repeat: no-repeat;
+        background-color: #fff;
+
+        .b4_inner {
+            width: 400px;
+            margin: 0 auto;
+
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: #F6B470;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .b4_list {
+            margin-top: 30px;
+
+            .b4_item {
+                display: flex;
+                margin-bottom: 20px;
+                font-family: "MuseoSansLight";
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .b4 {
+        .b4_wrapper {
+            background-image: none;
+            width: 700px;
+        }
+    }
+
+    @media (max-width:425px) {
+        .b4 {
+            background-image: none;
+
+            .b4_wrapper {
+                width: 300px;
+                background: transparent;
+                padding: 0;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                .b4_inner {
+                    width: auto;
+
+                }
+            }
+        }
+    }
+}

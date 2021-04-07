@@ -1,0 +1,135 @@
+//main: ..//style.less
+
+
+.header {
+    background: url(.././images/dest/allbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 225px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .header_start {
+            width: 400px;
+            text-align: center;
+
+            h3 {
+                font-size: 29px;
+                text-transform: uppercase;
+                margin: 20px 0 0 0;
+                color: #fff;
+
+                span {
+                    color: #EC5E2B;
+                }
+            }
+
+            h5 {
+                color: #F3B16E;
+                font-size: 25px;
+                font-weight: 300;
+            }
+
+            .form_desc {
+                text-align: center;
+                margin-top: 50px;
+                font-weight: 700;
+
+                h4 {
+                    font-size: 19px;
+                    text-transform: uppercase;
+                    color: #fff;
+
+                }
+
+                p {
+                    margin: 10px 0;
+                    font-size: 18px;
+                    color: #F8B571;
+                }
+            }
+
+            .form {
+                margin: 0 auto;
+
+                .btn {
+                    background: #F4B26F;
+                }
+            }
+        }
+
+        .header_end {
+            width: 600px;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header {
+        padding: 0 30px;
+    }
+
+}
+
+@media screen and (max-width:966px) {
+    .header {
+        padding: 40px 0;
+        background-position: center;
+
+        .header_wrapper {
+            flex-direction: column-reverse;
+
+            .header_end {
+                width: 500px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:425px) {
+    .header {
+        .header_wrapper {
+            width: 300px;
+            margin: 0 auto;
+
+            .logo {
+                width: 180px;
+            }
+
+            .header_end {
+                width: auto;
+            }
+
+            .header_start {
+                width: auto;
+
+                h3 {
+                    font-size: 23px;
+                }
+
+                .header_title {
+                    width: 170px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+//main: ..//style.less
+
+.btn {
+    background-color: #F8B571;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    border: none;
+    padding: 10px 70px;
+    border-radius: 45px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+    input,
+    select {
+        border-radius: 40px;
+        padding: 19px 30px;
+        font-size: 18px;
+        margin: 10px 0;
+        width: 350px;
+        border: none;
+    }
+
+    .btn {
+        margin: 30px auto;
+    }
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 172px;
+    left: 343px;
+    color: #fff;
+
+    .price_text {
+
+        font-size: 32px;
+    }
+
+    .newPrice {
+        font-size: 65px;
+
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width:966px) {
+    .price {
+        top: 139px;
+        left: 238px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .price {
+        top: 81px;
+        left: 153px;
+
+        .price_text {
+            font-size: 22px;
+        }
+
+        .newPrice {
+            font-size: 33px;
+
+        }
+    }
+
+    .form {
+        width: 300px;
+
+        input,
+        select {
+            width: 300px;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .form {
+        .btn {
+            max-width: 280px;
+        }
+    }
+}
